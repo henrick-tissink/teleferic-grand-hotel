@@ -24,21 +24,21 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Restaurant 4 Anotimpuri',
     description: {
-      ro: 'Restaurantul principal al hotelului, oferind un bufet generos cu preparate internationale si romanesti. Situat la parterul hotelului, cu vedere panoramica spre muntii Bucegi, restaurantul 4 Anotimpuri este locul ideal pentru mic dejun, pranz si cina in cadru elegant.',
-      en: 'The hotel\'s main restaurant, offering a generous buffet with international and Romanian dishes. Located on the ground floor with panoramic views of the Bucegi Mountains, Restaurant 4 Anotimpuri is the ideal venue for breakfast, lunch, and dinner in an elegant setting.',
-      de: 'Das Hauptrestaurant des Hotels bietet ein grosszuegiges Buffet mit internationalen und rumaenischen Gerichten. Im Erdgeschoss gelegen, mit Panoramablick auf die Bucegi-Berge, ist das Restaurant 4 Anotimpuri der ideale Ort fuer Fruehstueck, Mittagessen und Abendessen in elegantem Ambiente.',
+      ro: 'Restaurantul de referință al hotelului. Un bufet generos cu preparate internaționale și românești, cu vedere panoramică spre Munții Bucegi. Deschis pentru mic dejun, prânz și cină.',
+      en: 'The hotel\'s signature restaurant. A generous buffet of international and Romanian dishes, with panoramic views of the Bucegi Mountains. Open for breakfast, lunch, and dinner.',
+      de: 'Das Signature-Restaurant des Hotels. Ein großzügiges Buffet mit internationalen und rumänischen Gerichten, mit Panoramablick auf die Bucegi-Berge. Geöffnet zum Frühstück, Mittagessen und Abendessen.',
     },
     style: {
-      ro: 'International si romanesc',
+      ro: 'Internațional și românesc',
       en: 'International and Romanian',
-      de: 'International und rumaenisch',
+      de: 'International und rumänisch',
     },
     capacity: { interior: 180, terrace: 50 },
     hours: '07:00-10:30, 12:30-15:00, 18:30-22:00',
     dressCode: {
       ro: 'Elegant casual',
       en: 'Elegant casual',
-      de: 'Elegant laessig',
+      de: 'Elegant lässig',
     },
     menuType: {
       ro: 'Bufet',
@@ -61,9 +61,9 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Restaurant Coroana',
     description: {
-      ro: 'Restaurant a la carte cu o atmosfera rafinata si un meniu gourmet de exceptie. Terasa generoasa ofera un cadru deosebit pentru mese in aer liber, cu vedere spre peisajul montan. Preparat cu ingrediente locale de cea mai inalta calitate.',
-      en: 'An a la carte restaurant with a refined atmosphere and an exceptional gourmet menu. The generous terrace provides a remarkable setting for outdoor dining with views of the mountain landscape. Prepared with the highest quality local ingredients.',
-      de: 'Ein A-la-carte-Restaurant mit gehobenem Ambiente und einem aussergewoehnlichen Gourmet-Menue. Die grosszuegige Terrasse bietet einen besonderen Rahmen fuer Mahlzeiten im Freien mit Blick auf die Berglandschaft. Zubereitet mit lokalen Zutaten hoechster Qualitaet.',
+      ro: 'Fine dining cu rădăcini în terroir-ul carpatin. Meniul a la carte celebrează cele mai bune produse locale, iar terasa oferă una dintre cele mai frumoase vederi montane din Poiana Brașov.',
+      en: 'Fine dining rooted in the Carpathian terroir. The a la carte menu celebrates the best of local produce, and the terrace commands one of the finest mountain views in Poiana Brașov.',
+      de: 'Gehobene Küche, verwurzelt im Terroir der Karpaten. Das A-la-carte-Menü feiert die besten lokalen Erzeugnisse, und die Terrasse bietet einen der schönsten Bergblicke in Poiana Brașov.',
     },
     style: {
       ro: 'Gourmet',
@@ -75,7 +75,7 @@ export const diningVenues: DiningData[] = [
     dressCode: {
       ro: 'Smart casual',
       en: 'Smart casual',
-      de: 'Gehoben laessig',
+      de: 'Gehoben lässig',
     },
     menuType: {
       ro: 'A la carte',
@@ -98,9 +98,9 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Grand Lobby Cafe Bar',
     description: {
-      ro: 'Un spatiu lounge elegant in inima hotelului, perfect pentru o cafea de specialitate, cocktailuri rafinate sau o gustare usoara. Atmosfera calda si muzica ambientala creeaza cadrul ideal pentru intalniri de afaceri sau momente de relaxare.',
-      en: 'An elegant lounge space in the heart of the hotel, perfect for specialty coffee, refined cocktails, or a light snack. The warm atmosphere and ambient music create the ideal setting for business meetings or moments of relaxation.',
-      de: 'Ein eleganter Lounge-Bereich im Herzen des Hotels, perfekt fuer Spezialitaetenkaffee, erlesene Cocktails oder einen leichten Snack. Die warme Atmosphaere und die Hintergrundmusik schaffen den idealen Rahmen fuer Geschaeftstreffen oder Momente der Entspannung.',
+      ro: 'Sufrageria hotelului. Savurează o cafea de specialitate, un cocktail de după-amiază sau o gustare ușoară — lumina caldă și muzica discretă fac ca fiecare oră să pară fără grabă.',
+      en: 'The hotel\'s living room. Settle into a specialty coffee, an afternoon cocktail, or a light bite — warm light and soft music make every hour feel unhurried.',
+      de: 'Das Wohnzimmer des Hotels. Genießen Sie einen Spezialitätenkaffee, einen Nachmittagscocktail oder einen leichten Snack — warmes Licht und sanfte Musik lassen jede Stunde gemütlich vergehen.',
     },
     style: {
       ro: 'Lounge',
@@ -112,7 +112,7 @@ export const diningVenues: DiningData[] = [
     dressCode: {
       ro: 'Casual',
       en: 'Casual',
-      de: 'Laessig',
+      de: 'Lässig',
     },
     menuType: {
       ro: 'A la carte',
@@ -135,9 +135,9 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Apres Ski Bar',
     description: {
-      ro: 'Barul Apres Ski este locul perfect pentru a va relaxa dupa o zi pe partii. Situat la baza partiei, ofera bauturi calde si reci, gustari si o atmosfera casual si prietenoasa. Deschis in sezonul de iarna.',
-      en: 'The Apres Ski Bar is the perfect place to unwind after a day on the slopes. Located at the base of the ski run, it offers hot and cold drinks, snacks, and a casual, friendly atmosphere. Open during winter season.',
-      de: 'Die Apres-Ski-Bar ist der perfekte Ort, um sich nach einem Tag auf der Piste zu entspannen. Am Fusse der Skipiste gelegen, bietet sie warme und kalte Getraenke, Snacks und eine ungezwungene, freundliche Atmosphaere. Geoeffnet waehrend der Wintersaison.',
+      ro: 'Direct de pe pârtie, la ceva cald. La poalele pârtiei de schi, Apres Ski Bar este locul unde se spun cele mai bune povești ale zilei. Deschis pe toată durata sezonului de iarnă.',
+      en: 'Straight off the slopes and into something warm. At the foot of the ski run, the Apres Ski Bar is where the day\'s best stories are told. Open through winter season.',
+      de: 'Direkt von der Piste in etwas Warmes. Am Fuße der Skipiste ist die Apres-Ski-Bar der Ort, an dem die besten Geschichten des Tages erzählt werden. Geöffnet während der Wintersaison.',
     },
     style: {
       ro: 'Casual',
@@ -172,21 +172,21 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Casa Utu',
     description: {
-      ro: 'Un loc cu suflet romanesc autentic, dedicat bucatariei traditionale si evenimentelor private. Casa Utu ofera preparate gatite dupa retete mostenite, intr-un cadru rustic si primitor, ideal pentru petreceri si evenimente speciale.',
-      en: 'A venue with authentic Romanian soul, dedicated to traditional cuisine and private events. Casa Utu offers dishes prepared from inherited recipes in a rustic and welcoming setting, ideal for celebrations and special events.',
-      de: 'Ein Ort mit authentischer rumaenischer Seele, gewidmet der traditionellen Kueche und privaten Veranstaltungen. Casa Utu bietet Gerichte nach ueberlieferten Rezepten in einem rustikalen und einladenden Ambiente, ideal fuer Feiern und besondere Anlaesse.',
+      ro: 'Suflet românesc autentic într-un cadru rustic și primitor. Preparate gătite după rețete moștenite din familie — într-un spațiu creat pentru a aduce oamenii împreună.',
+      en: 'Authentic Romanian soul in a rustic, welcoming setting. Dishes prepared from inherited family recipes — in a space that was made for gathering.',
+      de: 'Authentische rumänische Seele in einem rustikalen, einladenden Ambiente. Gerichte nach überlieferten Familienrezepten — in einem Raum, der zum Zusammenkommen geschaffen wurde.',
     },
     style: {
-      ro: 'Traditional romanesc',
+      ro: 'Tradițional românesc',
       en: 'Traditional Romanian',
-      de: 'Traditionell rumaenisch',
+      de: 'Traditionell rumänisch',
     },
     capacity: { interior: 0, terrace: 0 },
     hours: 'Evenimente / Events / Veranstaltungen',
     dressCode: {
       ro: 'Smart casual',
       en: 'Smart casual',
-      de: 'Gehoben laessig',
+      de: 'Gehoben lässig',
     },
     menuType: {
       ro: 'Meniu dedicat evenimentelor',
@@ -209,9 +209,9 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Spa Bar',
     description: {
-      ro: 'Situat in zona de wellness a hotelului, Spa Barul ofera bauturi racoritoare, smoothie-uri, ceaiuri si gustari usoare, perfecte pentru a completa experienta de relaxare. Un refugiu linistit unde sanatatea si bunastarea sunt prioritare.',
-      en: 'Located in the hotel\'s wellness area, the Spa Bar offers refreshing drinks, smoothies, teas, and light snacks, perfect for complementing the relaxation experience. A tranquil retreat where health and well-being are the priority.',
-      de: 'Im Wellnessbereich des Hotels gelegen, bietet die Spa-Bar erfrischende Getraenke, Smoothies, Tees und leichte Snacks, perfekt als Ergaenzung zum Entspannungserlebnis. Ein ruhiger Rueckzugsort, an dem Gesundheit und Wohlbefinden im Vordergrund stehen.',
+      ro: 'Smoothie-uri, ceaiuri din plante și preparate ușoare în liniștea zonei de wellness — o pauză blândă între tratamente.',
+      en: 'Smoothies, herbal teas, and light plates in the calm of the wellness wing — a gentle pause between treatments.',
+      de: 'Smoothies, Kräutertees und leichte Gerichte in der Ruhe des Wellnessbereichs — eine sanfte Pause zwischen den Behandlungen.',
     },
     style: {
       ro: 'Wellness',
@@ -244,9 +244,9 @@ export const diningVenues: DiningData[] = [
     },
     name: 'Club de Noapte Arena',
     description: {
-      ro: 'Clubul de noapte Arena, cu o capacitate de peste 150 de locuri, este disponibil la cerere pentru evenimente private, petreceri corporate si celebrari speciale. Un spatiu versatil cu sistem de sunet profesional si iluminare de scena.',
-      en: 'Arena Nightclub, with a capacity of over 150 seats, is available on demand for private events, corporate parties, and special celebrations. A versatile space with a professional sound system and stage lighting.',
-      de: 'Der Nachtclub Arena, mit einer Kapazitaet von ueber 150 Plaetzen, steht auf Anfrage fuer private Veranstaltungen, Firmenpartys und besondere Feiern zur Verfuegung. Ein vielseitiger Raum mit professioneller Tonanlage und Buehnenbeleuchtung.',
+      ro: 'Un spațiu cu 150 de locuri, cu sistem profesional de sunet și iluminare de scenă, disponibil la cerere pentru evenimente private, celebrări corporate și ocazii nocturne.',
+      en: 'A 150-seat venue with professional sound and stage lighting, available on request for private events, corporate celebrations, and late-night occasions.',
+      de: 'Ein Veranstaltungsort mit 150 Plätzen, professioneller Tonanlage und Bühnenbeleuchtung, auf Anfrage verfügbar für private Events, Firmenfeiern und spätabendliche Anlässe.',
     },
     style: {
       ro: 'Club / Evenimente',
@@ -258,7 +258,7 @@ export const diningVenues: DiningData[] = [
     dressCode: {
       ro: 'Smart casual',
       en: 'Smart casual',
-      de: 'Gehoben laessig',
+      de: 'Gehoben lässig',
     },
     menuType: {
       ro: 'Evenimente private',
