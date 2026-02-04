@@ -222,7 +222,15 @@
     "checkinRequired": "Data de check-in este obligatorie",
     "checkoutRequired": "Data de check-out este obligatorie",
     "adultsRequired": "Numărul de adulți este obligatoriu",
-    "phoneInvalid": "Numărul de telefon poate conține doar cifre, spații și +"
+    "phoneInvalid": "Numărul de telefon poate conține doar cifre, spații și +",
+    "stayDates": "Sejurul Tău",
+    "guestsAndRoom": "Oaspeți & Cameră",
+    "yourDetails": "Datele Tale",
+    "confirmationTitle": "Cererea de Rezervare Confirmată",
+    "stayLabel": "Sejur",
+    "guestsLabel": "Oaspeți",
+    "roomLabel": "Cameră",
+    "contactLabel": "Contact"
   },
   "footer": {
     "phone": "Telefon",

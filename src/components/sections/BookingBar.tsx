@@ -31,11 +31,11 @@ export function BookingBar() {
   }
 
   return (
-    <div className="bg-navy py-4">
+    <div className="bg-navy py-4 border-t-2 border-gold/30">
       <div className="container-custom flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 w-full md:w-auto">
           <div>
-            <label htmlFor="booking-bar-checkin" className="text-white/70 text-xs uppercase tracking-wider block mb-1">
+            <label htmlFor="booking-bar-checkin" className="text-gold/70 text-xs uppercase tracking-wider block mb-1">
               {t('checkIn')}
             </label>
             <input
@@ -48,7 +48,7 @@ export function BookingBar() {
             />
           </div>
           <div>
-            <label htmlFor="booking-bar-checkout" className="text-white/70 text-xs uppercase tracking-wider block mb-1">
+            <label htmlFor="booking-bar-checkout" className="text-gold/70 text-xs uppercase tracking-wider block mb-1">
               {t('checkOut')}
             </label>
             <input
@@ -61,7 +61,7 @@ export function BookingBar() {
             />
           </div>
           <div>
-            <label htmlFor="booking-bar-adults" className="text-white/70 text-xs uppercase tracking-wider block mb-1">
+            <label htmlFor="booking-bar-adults" className="text-gold/70 text-xs uppercase tracking-wider block mb-1">
               {t('adults')}
             </label>
             <select
@@ -78,7 +78,7 @@ export function BookingBar() {
             </select>
           </div>
           <div>
-            <label htmlFor="booking-bar-children" className="text-white/70 text-xs uppercase tracking-wider block mb-1">
+            <label htmlFor="booking-bar-children" className="text-gold/70 text-xs uppercase tracking-wider block mb-1">
               {t('children')}
             </label>
             <select
@@ -98,9 +98,12 @@ export function BookingBar() {
 
         <button
           onClick={handleSubmit}
-          className="px-8 py-3 bg-gold text-navy font-semibold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors whitespace-nowrap"
+          className="group px-8 py-3 bg-gold text-navy font-semibold uppercase tracking-wider text-sm hover:bg-gold-light transition-colors whitespace-nowrap flex items-center gap-2"
         >
-          {t('submit')}
+          <span>{t('submit')}</span>
+          <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
         </button>
       </div>
     </div>

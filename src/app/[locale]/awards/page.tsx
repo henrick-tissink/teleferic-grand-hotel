@@ -75,16 +75,16 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
                   <div
                     className="bg-white p-8 text-center shadow-sm hover:shadow-lg transition-shadow duration-300 group"
                   >
-                    <div className="relative w-28 h-28 mx-auto mb-6">
-                      <Image
-                        src={award.image}
-                        alt={award.name}
-                        fill
-                        className="object-contain transition-transform duration-500 group-hover:scale-110"
-                        sizes="112px"
-                        placeholder="blur"
-                        blurDataURL={blurDataURL}
-                      />
+                    <div className="relative w-28 h-28 mx-auto mb-6 bg-navy rounded-lg flex items-center justify-center">
+                      <div className="relative w-20 h-20">
+                        <Image
+                          src={award.image}
+                          alt={award.name}
+                          fill
+                          className="object-contain transition-transform duration-500 group-hover:scale-110"
+                          sizes="80px"
+                        />
+                      </div>
                     </div>
                     <h3 className="text-sm font-semibold uppercase tracking-wider text-gold mb-2">
                       {award.name}

@@ -222,7 +222,15 @@
     "checkinRequired": "Check-in date is required",
     "checkoutRequired": "Check-out date is required",
     "adultsRequired": "Number of adults is required",
-    "phoneInvalid": "Phone number can only contain digits, spaces, and +"
+    "phoneInvalid": "Phone number can only contain digits, spaces, and +",
+    "stayDates": "Your Stay",
+    "guestsAndRoom": "Guests & Room",
+    "yourDetails": "Your Details",
+    "confirmationTitle": "Reservation Request Confirmed",
+    "stayLabel": "Stay",
+    "guestsLabel": "Guests",
+    "roomLabel": "Room",
+    "contactLabel": "Contact"
   },
   "footer": {
     "phone": "Phone",

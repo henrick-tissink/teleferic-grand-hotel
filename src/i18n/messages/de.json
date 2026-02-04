@@ -222,7 +222,15 @@
     "checkinRequired": "Check-in-Datum ist erforderlich",
     "checkoutRequired": "Check-out-Datum ist erforderlich",
     "adultsRequired": "Anzahl der Erwachsenen ist erforderlich",
-    "phoneInvalid": "Telefonnummer darf nur Ziffern, Leerzeichen und + enthalten"
+    "phoneInvalid": "Telefonnummer darf nur Ziffern, Leerzeichen und + enthalten",
+    "stayDates": "Ihr Aufenthalt",
+    "guestsAndRoom": "Gäste & Zimmer",
+    "yourDetails": "Ihre Daten",
+    "confirmationTitle": "Reservierungsanfrage Bestätigt",
+    "stayLabel": "Aufenthalt",
+    "guestsLabel": "Gäste",
+    "roomLabel": "Zimmer",
+    "contactLabel": "Kontakt"
   },
   "footer": {
     "phone": "Telefon",
