@@ -1,0 +1,11 @@
+# Teleferic Grand Hotel — Live Camera Stream
+# Page: https://telefericgrandhotel.ro/camera-live/
+# Extracted via headless browser
+
+# YouTube Live Stream embed:
+https://www.youtube.com/embed/kEIFOfvNF4I?si=1suxejV7Ni-RYr9p&controls=0
+
+# YouTube video ID: kEIFOfvNF4I
+
+# Note: On the original site this iframe is blocked behind Cookiebot consent
+# (data-cookieconsent="marketing") so it only loads after accepting marketing cookies.

@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color palette — Alpine luxury */
+  --color-navy: #1a1f36;
+  --color-navy-light: #2a2f4a;
+  --color-charcoal: #2d2d2d;
+  --color-gold: #c9a96e;
+  --color-gold-light: #dfc090;
+  --color-gold-dark: #a88a52;
+  --color-cream: #faf8f4;
+  --color-cream-dark: #f0ece4;
+  --color-forest: #2d5a3d;
+  --color-forest-light: #3a7a52;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-heading: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --section-padding: 6rem;
+  --container-max: 1400px;
+
+  /* Animation tokens */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 700ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* ── Accessibility: Focus rings ── */
+*:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Remove default focus outline — only show for keyboard users via :focus-visible */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Accessibility: Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Skip to content link (screen reader accessible) ── */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 9999;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-gold);
+  color: var(--color-navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 0;
+}
+
+/* Utility classes */
+.section-padding {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.container-custom {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Hide scrollbar for slider components */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Gallery crossfade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Ken Burns effect for hero slider */
+@keyframes kenBurns {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  to {
+    transform: scale(1.15) translate(var(--kb-x, 0%), var(--kb-y, 0%));
+  }
+}
+
+/* Ken Burns effect with CSS custom property directions */
+@keyframes kb {
+  0% {
+    transform: scale(1) translate(0%, 0%);
+  }
+  100% {
+    transform: scale(1.15) translate(var(--kb-tx), var(--kb-ty));
+  }
+}
+
+/* Touch feedback for mobile cards */
+@media (hover: none) {
+  .group:active .group-hover\:scale-110 {
+    transform: scale(1.05);
+  }
+  .group:active .group-hover\:shadow-xl {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  }
+}
+
+/* Lite YouTube embed styles */
+lite-youtube {
+  max-width: 100%;
+}
