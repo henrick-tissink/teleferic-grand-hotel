@@ -77,7 +77,7 @@ export default async function DiningPage({ params }: { params: Promise<{ locale:
                   </p>
                   <div className="flex items-center gap-4 text-sm text-charcoal/70">
                     <span className="flex items-center gap-1">
-                      {t('hours')}: {venue.hours}
+                      {t('hours')}: {venue.hours[locale as Locale]}
                     </span>
                   </div>
                   {(venue.capacity.interior > 0 || venue.capacity.terrace > 0) && (

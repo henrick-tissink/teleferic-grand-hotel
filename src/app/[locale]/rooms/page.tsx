@@ -76,12 +76,15 @@ export default async function RoomsPage({ params }: { params: Promise<{ locale: 
                     <span>{t('size', { size: room.size })}</span>
                     <span className="w-1 h-1 rounded-full bg-gold" />
                     <span>
-                      {room.capacity.children > 0
-                        ? t('capacityWithChildren', {
-                            adults: room.capacity.maxAdults,
+                      {room.capacity.childAgeLimit
+                        ? t('adultsAndChild', {
+                            adults: room.capacity.adults,
                             children: room.capacity.children,
+                            age: room.capacity.childAgeLimit,
                           })
-                        : t('capacity', { adults: room.capacity.maxAdults })}
+                        : room.capacity.hasSofaBed
+                          ? t('maxGuests', { count: room.capacity.maxOccupancy })
+                          : t('maxAdults', { count: room.capacity.adults })}
                     </span>
                   </div>
                   <span className="text-gold text-sm font-semibold uppercase tracking-wider">

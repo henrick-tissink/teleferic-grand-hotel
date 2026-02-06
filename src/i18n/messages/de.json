@@ -61,15 +61,20 @@
     "title": "Zimmer & Suiten",
     "subtitle": "Alpiner Komfort in acht individuellen Stilen",
     "size": "{size} qm",
-    "capacity": "Bis zu {adults} Erwachsene",
-    "capacityWithChildren": "Bis zu {adults} Erwachsene + {children} Kinder",
+    "maxGuests": "Bis zu {count} Gäste",
+    "maxAdults": "Bis zu {count} Erwachsene",
+    "adultsAndChild": "{adults} Erwachsene + {children} Kind unter {age} Jahren",
+    "sofaBedAvailable": "Schlafsofa vorhanden",
+    "childInParentsBed": "Kind schläft im Elternbett",
+    "noExtraBed": "Kein Zustellbett verfügbar",
     "amenities": "Ausstattung",
     "floorPlan": "Grundriss",
     "gallery": "Fotogalerie",
     "bookThisRoom": "Dieses Zimmer Reservieren",
     "bedType": "Bettyp",
     "viewDetails": "Details Ansehen",
-    "notFound": "Zimmer nicht gefunden"
+    "notFound": "Zimmer nicht gefunden",
+    "occupancy": "Belegung"
   },
   "dining": {
     "title": "Restaurants & Bars",

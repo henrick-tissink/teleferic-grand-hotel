@@ -7,7 +7,7 @@ export interface DiningData {
   description: Record<Locale, string>
   style: Record<Locale, string>
   capacity: { interior: number; terrace: number }
-  hours: string
+  hours: Record<Locale, string>
   dressCode: Record<Locale, string>
   menuType: Record<Locale, string>
   images: string[]
@@ -34,7 +34,11 @@ export const diningVenues: DiningData[] = [
       de: 'International und rumänisch',
     },
     capacity: { interior: 180, terrace: 50 },
-    hours: '07:00-10:30, 12:30-15:00, 18:30-22:00',
+    hours: {
+      ro: '07:00-10:30, 12:30-15:00, 18:30-22:00',
+      en: '07:00-10:30, 12:30-15:00, 18:30-22:00',
+      de: '07:00-10:30, 12:30-15:00, 18:30-22:00',
+    },
     dressCode: {
       ro: 'Elegant casual',
       en: 'Elegant casual',
@@ -71,7 +75,11 @@ export const diningVenues: DiningData[] = [
       de: 'Gourmet',
     },
     capacity: { interior: 80, terrace: 90 },
-    hours: '12:00-23:00',
+    hours: {
+      ro: '12:00-23:00',
+      en: '12:00-23:00',
+      de: '12:00-23:00',
+    },
     dressCode: {
       ro: 'Smart casual',
       en: 'Smart casual',
@@ -108,7 +116,11 @@ export const diningVenues: DiningData[] = [
       de: 'Lounge',
     },
     capacity: { interior: 30, terrace: 20 },
-    hours: '10:00-24:00',
+    hours: {
+      ro: '10:00-24:00',
+      en: '10:00-24:00',
+      de: '10:00-24:00',
+    },
     dressCode: {
       ro: 'Casual',
       en: 'Casual',
@@ -145,7 +157,11 @@ export const diningVenues: DiningData[] = [
       de: 'Ungezwungen',
     },
     capacity: { interior: 20, terrace: 40 },
-    hours: '10:00-17:00 (iarna / winter / Winter)',
+    hours: {
+      ro: '10:00-17:00 (sezon de iarnă)',
+      en: '10:00-17:00 (winter season)',
+      de: '10:00-17:00 (Wintersaison)',
+    },
     dressCode: {
       ro: 'Echipament de ski',
       en: 'Ski attire',
@@ -182,7 +198,11 @@ export const diningVenues: DiningData[] = [
       de: 'Traditionell rumänisch',
     },
     capacity: { interior: 0, terrace: 0 },
-    hours: 'Evenimente / Events / Veranstaltungen',
+    hours: {
+      ro: 'Evenimente',
+      en: 'Events',
+      de: 'Veranstaltungen',
+    },
     dressCode: {
       ro: 'Smart casual',
       en: 'Smart casual',
@@ -219,7 +239,11 @@ export const diningVenues: DiningData[] = [
       de: 'Wellness',
     },
     capacity: { interior: 20, terrace: 10 },
-    hours: '10:00-22:00',
+    hours: {
+      ro: '10:00-22:00',
+      en: '10:00-22:00',
+      de: '10:00-22:00',
+    },
     dressCode: {
       ro: 'Echipament de inot / halat',
       en: 'Swimming attire / bathrobe',
@@ -254,7 +278,11 @@ export const diningVenues: DiningData[] = [
       de: 'Club / Veranstaltungen',
     },
     capacity: { interior: 150, terrace: 0 },
-    hours: 'La cerere / On demand / Auf Anfrage',
+    hours: {
+      ro: 'La cerere',
+      en: 'On request',
+      de: 'Auf Anfrage',
+    },
     dressCode: {
       ro: 'Smart casual',
       en: 'Smart casual',

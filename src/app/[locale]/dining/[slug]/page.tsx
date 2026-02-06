@@ -102,7 +102,7 @@ export default async function DiningDetailPage({
                 <p className="text-sm text-charcoal/70 uppercase tracking-wider mb-1">
                   {t('hours')}
                 </p>
-                <p className="text-navy font-medium">{venue.hours}</p>
+                <p className="text-navy font-medium">{venue.hours[locale as Locale]}</p>
               </div>
               <div>
                 <p className="text-sm text-charcoal/70 uppercase tracking-wider mb-1">

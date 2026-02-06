@@ -123,15 +123,31 @@ export default async function RoomDetailPage({
               </div>
               <div>
                 <p className="text-sm text-charcoal/70 uppercase tracking-wider mb-1">
-                  {room.capacity.children > 0
-                    ? t('capacityWithChildren', {
-                        adults: room.capacity.maxAdults,
-                        children: room.capacity.children,
-                      })
-                    : t('capacity', { adults: room.capacity.maxAdults })}
+                  {t('occupancy')}
                 </p>
-                <p className="text-2xl font-[family-name:var(--font-heading)] text-navy font-bold">
-                  {room.capacity.maxAdults + room.capacity.children}
+                <p className="text-navy font-medium">
+                  {room.capacity.childAgeLimit
+                    ? t('adultsAndChild', {
+                        adults: room.capacity.adults,
+                        children: room.capacity.children,
+                        age: room.capacity.childAgeLimit,
+                      })
+                    : room.capacity.hasSofaBed
+                      ? t('maxGuests', { count: room.capacity.maxOccupancy })
+                      : t('maxAdults', { count: room.capacity.adults })}
+                </p>
+                {room.capacity.childSleepsWithParents && (
+                  <p className="text-sm text-charcoal/60 mt-1">
+                    {t('childInParentsBed')}
+                  </p>
+                )}
+                {room.capacity.hasSofaBed && (
+                  <p className="text-sm text-charcoal/60 mt-1">
+                    {t('sofaBedAvailable')}
+                  </p>
+                )}
+                <p className="text-sm text-charcoal/60 mt-1">
+                  {t('noExtraBed')}
                 </p>
               </div>
             </div>

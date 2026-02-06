@@ -61,15 +61,20 @@
     "title": "Rooms & Suites",
     "subtitle": "Alpine comfort in eight distinct styles",
     "size": "{size} sqm",
-    "capacity": "Up to {adults} adults",
-    "capacityWithChildren": "Up to {adults} adults + {children} children",
+    "maxGuests": "Up to {count} guests",
+    "maxAdults": "Up to {count} adults",
+    "adultsAndChild": "{adults} adults + {children} child under {age}",
+    "sofaBedAvailable": "Sofa bed available",
+    "childInParentsBed": "Child sleeps in parents' bed",
+    "noExtraBed": "No extra bed available",
     "amenities": "Amenities",
     "floorPlan": "Floor Plan",
     "gallery": "Photo Gallery",
     "bookThisRoom": "Reserve This Room",
     "bedType": "Bed Type",
     "viewDetails": "View Details",
-    "notFound": "Room Not Found"
+    "notFound": "Room Not Found",
+    "occupancy": "Occupancy"
   },
   "dining": {
     "title": "Restaurants & Bars",

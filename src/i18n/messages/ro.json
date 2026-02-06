@@ -61,15 +61,20 @@
     "title": "Camere & Suite",
     "subtitle": "Confort alpin în opt stiluri distincte",
     "size": "{size} mp",
-    "capacity": "Până la {adults} adulți",
-    "capacityWithChildren": "Până la {adults} adulți + {children} copii",
+    "maxGuests": "Până la {count} oaspeți",
+    "maxAdults": "Până la {count} adulți",
+    "adultsAndChild": "{adults} adulți + {children} copil sub {age} ani",
+    "sofaBedAvailable": "Canapea extensibilă disponibilă",
+    "childInParentsBed": "Copilul doarme în patul părinților",
+    "noExtraBed": "Fără pat suplimentar",
     "amenities": "Dotări",
     "floorPlan": "Plan Etaj",
     "gallery": "Galerie Foto",
     "bookThisRoom": "Rezervă Această Cameră",
     "bedType": "Tip Pat",
     "viewDetails": "Vezi Detalii",
-    "notFound": "Camera nu a fost găsită"
+    "notFound": "Camera nu a fost găsită",
+    "occupancy": "Ocupare"
   },
   "dining": {
     "title": "Restaurante & Baruri",

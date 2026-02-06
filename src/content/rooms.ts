@@ -1,12 +1,22 @@
 import type { Locale } from '@/i18n/config'
 
+export interface RoomCapacity {
+  maxOccupancy: number
+  adults: number
+  children: number
+  childAgeLimit?: number // e.g., 6 means "under 6 years old"
+  childSleepsWithParents?: boolean
+  hasSofaBed?: boolean
+  extraBedAvailable: boolean
+}
+
 export interface RoomData {
   id: string
   slug: Record<Locale, string>
   name: Record<Locale, string>
   description: Record<Locale, string>
   size: number
-  capacity: { adults: number; children: number; maxAdults: number }
+  capacity: RoomCapacity
   bedType: Record<Locale, string>
   amenities: string[]
   images: string[]
@@ -33,7 +43,13 @@ export const rooms: RoomData[] = [
       de: 'Achtzig Quadratmeter alpiner Grandeur — Wohnbereich, eigene Küchenzeile und Balkonblick auf die Gipfel.',
     },
     size: 80,
-    capacity: { adults: 2, children: 2, maxAdults: 3 },
+    capacity: {
+      maxOccupancy: 6,
+      adults: 4,
+      children: 2,
+      hasSofaBed: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x200 + canapea extensibilă',
       en: 'King bed 200x200 + sofa bed',
@@ -86,7 +102,13 @@ export const rooms: RoomData[] = [
       de: 'Großzügiger Raum und edle Ausstattung — Kingsize-Bett, eigener Wohnbereich und weiter Blick auf die Berge.',
     },
     size: 50,
-    capacity: { adults: 2, children: 2, maxAdults: 3 },
+    capacity: {
+      maxOccupancy: 4,
+      adults: 2,
+      children: 2,
+      hasSofaBed: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x200 + canapea extensibilă',
       en: 'King bed 200x200 + sofa bed',
@@ -134,7 +156,13 @@ export const rooms: RoomData[] = [
       de: 'Ein alpiner Rückzugsort mit Stil — geräumig, lichtdurchflutet, mit Kingsize-Bett und Sofa für lange, unbeschwerte Abende.',
     },
     size: 45,
-    capacity: { adults: 2, children: 2, maxAdults: 3 },
+    capacity: {
+      maxOccupancy: 4,
+      adults: 2,
+      children: 2,
+      hasSofaBed: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x200 + canapea extensibilă',
       en: 'King bed 200x200 + sofa bed',
@@ -172,12 +200,18 @@ export const rooms: RoomData[] = [
       de: 'Junior Suite Economy',
     },
     description: {
-      ro: 'Confortul unui suite, la scară gândită — pat king, canapea și tot ce trebuie, într-un cadru cald și intim.',
-      en: 'Suite comfort, thoughtfully scaled — king bed, sofa, and all the essentials in a warm, intimate setting.',
-      de: 'Suite-Komfort, durchdacht dimensioniert — Kingsize-Bett, Sofa und alles Wesentliche in warmem, behaglichem Ambiente.',
+      ro: 'Confortul unui suite la parter, fără balcon — pat king, canapea extensibilă și tot ce trebuie, într-un cadru cald și intim.',
+      en: 'Suite comfort on the ground floor, without balcony — king bed, sofa bed, and all the essentials in a warm, intimate setting.',
+      de: 'Suite-Komfort im Erdgeschoss, ohne Balkon — Kingsize-Bett, Schlafsofa und alles Wesentliche in warmem, behaglichem Ambiente.',
     },
     size: 35,
-    capacity: { adults: 2, children: 1, maxAdults: 2 },
+    capacity: {
+      maxOccupancy: 4,
+      adults: 2,
+      children: 2,
+      hasSofaBed: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x200 + canapea extensibilă',
       en: 'King bed 200x200 + sofa bed',
@@ -189,7 +223,6 @@ export const rooms: RoomData[] = [
       'minibar',
       'safe',
       'flat-screen-tv',
-      'balcony',
       'bathrobe',
       'slippers',
       'hair-dryer',
@@ -219,7 +252,14 @@ export const rooms: RoomData[] = [
       de: 'King- oder Einzelbetten, eigener Balkon und Raum zum Durchatmen — unser geräumigstes Doppelzimmer.',
     },
     size: 30,
-    capacity: { adults: 2, children: 1, maxAdults: 2 },
+    capacity: {
+      maxOccupancy: 3,
+      adults: 2,
+      children: 1,
+      childAgeLimit: 6,
+      childSleepsWithParents: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x180 sau 2 paturi twin',
       en: 'King bed 200x180 or 2 twin beds',
@@ -260,7 +300,14 @@ export const rooms: RoomData[] = [
       de: 'Klassischer Alpenstil mit jedem modernen Komfort — Ihre Basis für Pisten, Wanderwege und Bergluft.',
     },
     size: 25,
-    capacity: { adults: 2, children: 0, maxAdults: 2 },
+    capacity: {
+      maxOccupancy: 3,
+      adults: 2,
+      children: 1,
+      childAgeLimit: 6,
+      childSleepsWithParents: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x180 sau 2 paturi twin',
       en: 'King bed 200x180 or 2 twin beds',
@@ -272,6 +319,7 @@ export const rooms: RoomData[] = [
       'minibar',
       'safe',
       'flat-screen-tv',
+      'balcony',
       'bathrobe',
       'slippers',
       'hair-dryer',
@@ -295,12 +343,19 @@ export const rooms: RoomData[] = [
       de: 'Doppelzimmer Economy',
     },
     description: {
-      ro: 'Compactă și bine gândită — creată pentru cei care își petrec zilele pe munte și serile în companie bună.',
-      en: 'Compact and considered — designed for those who spend their days on the mountain and their evenings in good company.',
-      de: 'Kompakt und durchdacht — für alle, die ihre Tage am Berg und ihre Abende in guter Gesellschaft verbringen.',
+      ro: 'La parter și fără balcon — pentru cei care își petrec zilele pe munte și serile în companie bună.',
+      en: 'On the ground floor, without balcony — for those who spend their days on the mountain and their evenings in good company.',
+      de: 'Im Erdgeschoss, ohne Balkon — für alle, die ihre Tage am Berg und ihre Abende in guter Gesellschaft verbringen.',
     },
     size: 22,
-    capacity: { adults: 2, children: 0, maxAdults: 2 },
+    capacity: {
+      maxOccupancy: 3,
+      adults: 2,
+      children: 1,
+      childAgeLimit: 6,
+      childSleepsWithParents: true,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat king 200x160 sau 2 paturi twin',
       en: 'King bed 200x160 or 2 twin beds',
@@ -338,7 +393,12 @@ export const rooms: RoomData[] = [
       de: 'Ihr ruhiger Winkel am Berg — mit Bedacht eingerichtet für den unabhängigen Reisenden.',
     },
     size: 18,
-    capacity: { adults: 1, children: 0, maxAdults: 1 },
+    capacity: {
+      maxOccupancy: 2,
+      adults: 2,
+      children: 0,
+      extraBedAvailable: false,
+    },
     bedType: {
       ro: 'Pat single 200x120',
       en: 'Single bed 200x120',
@@ -350,6 +410,9 @@ export const rooms: RoomData[] = [
       'minibar',
       'safe',
       'flat-screen-tv',
+      'balcony',
+      'bathrobe',
+      'slippers',
       'hair-dryer',
     ],
     images: [
